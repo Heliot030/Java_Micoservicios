@@ -30,12 +30,12 @@ public class CursosContorller {
 		cursos.add(new Curso("CSS", 25 , "mañana"));
 	}
 	
-	@GetMapping(value = "cursos" , produces = MediaType.APPLICATION_XML_VALUE)
+	@GetMapping(value = "cursos" , produces = MediaType.APPLICATION_JSON_VALUE)
 	public List<Curso> getCursos(){
 		return cursos;
 	}
 	
-	@GetMapping(value = "curso" , produces = MediaType.APPLICATION_XML_VALUE)
+	@GetMapping(value = "curso" , produces = MediaType.APPLICATION_JSON_VALUE)
 	public Curso getCurso(){
 		return new Curso("Java", 100, "Mañana");
 	}
